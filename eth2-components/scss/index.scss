@@ -5,3 +5,14 @@
  */
 
 @import './static/normalize';
+
+// Settings
+@import './settings/variables';
+
+// Core
+@import './core/helpers';
+@import './core/layout';
+@import './core/media';
+
+// Components
+@import './components/buttons/buttons';

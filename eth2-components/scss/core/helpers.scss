@@ -1,0 +1,47 @@
+@import '../mixins/clearfix';
+@import "../mixins/visually-hidden";
+
+.clearfix {
+  @include clearfix;
+}
+
+.visually-hidden {
+  @include visually-hidden;
+}
+
+// Only show when JS is not supported
+.no-js:not(html) {
+  display: none;
+
+  .no-js & {
+    display: block;
+  }
+}
+
+// Only show when JS is supported
+.js {
+  .no-js & {
+    display: none;
+  }
+}
+
+// Only show when browser cookies are not supported
+.supports-no-cookies:not(html) {
+  display: none;
+
+  html.supports-no-cookies & {
+    display: block;
+  }
+}
+
+// Only show when browser cookies are supported
+.supports-cookies {
+  html.supports-no-cookies & {
+    display: none;
+  }
+}
+
+.hide {
+  /* stylelint-disable declaration-no-important */
+  display: none !important;
+}
