@@ -31,18 +31,42 @@ Patterns are a simple, reusable solution to a design problem.
 - In-page navigation
 
 ### Components
-A series of individual styles and components, with no framework tax, no framework silo. 
+A series of individual styles and components, with no framework tax, no framework silo.
 
 - Accordion
-- Breadcrumbs
+- Breadcrumb
+- Button
+- Checkbox
+- Code snippet
+- Data table
 - Card component (or Tile)
 - Card group
 - Content block
 - Horizontal rule
 - Image
-- Link list
+- Link
+- List
+- Select
+- Slider
+- Tag
 - Masthead
 - Footer
 - Pictogram item
 - Quote
 
+The included source files are written in Sass using SCSS syntax.
+
+```
+eth2-components/
+├── css
+│   ├── eth2-components.css
+│   └── eth2-components.min.css
+├── scripts
+│   ├── eth2-components.js
+│   └── eth2-components.min.js
+├── scss
+│   └── components
+│       └── accordion
+│           └── accordion.scss
+└── src
+```
