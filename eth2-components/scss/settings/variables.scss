@@ -1,5 +1,75 @@
-// Text colors
-$color-body-text: #000000;
+@import "colors";
 
-// Background colors
-$main-background: #ffffff;
+// Border
+$border-width: 1px !default;
+$border-color: $black !default;
+$border-style: solid !default;
+$border: $border-width $border-color $border-style !default;
+
+// Border Radius
+$border-radius-1: 4px !default;
+$border-radius-2: 6px !default;
+$border-radius-3: 8px !default;
+$border-radius: $border-radius-1 !default;
+
+// Typography
+$body-font: "Segoe UI", Helvetica, Arial, sans-serif !default;
+$mono-font: "SFMono-Regular", Consolas, Menlo, monospace !default;
+
+// Font weights
+$font-weight-bold: 600 !default;
+$font-weight-normal: 400 !default;
+$font-weight-light: 300 !default;
+
+// Heading sizes - Mobile
+$h0-size-mobile: 32px !default;
+$h1-size-mobile: 26px !default;
+$h2-size-mobile: 22px !default;
+$h3-size-mobile: 18px !default;
+
+// Heading sizes - Desktop
+$h0-size: 40px !default;
+$h1-size: 32px !default;
+$h2-size: 24px !default;
+$h3-size: 20px !default;
+$h4-size: 16px !default;
+$h5-size: 14px !default;
+$h6-size: 12px !default;
+
+$font-size-small: 12px !default;
+
+// Transitions
+$transition-duration: 250ms;
+$transition-timing: ease-in-out;
+
+// Grid
+$grid-medium: 37.5em; // 600px (Typically smart phones)
+$grid-large: 56.25em; // 900px (Typically tablet devices)
+$grid-widescreen: 80em; // 1280px
+$grid-max-width: 65em; // 1040px (Typically desktop or laptop screens)
+$grid-gutter: 1.875em;
+
+// Breakpoints used with the media-query mixin
+$small: 'small';
+$medium: 'medium';
+$medium-down: 'medium-down';
+$medium-up: 'medium-up';
+$large: 'large';
+$large-down: 'large-down';
+$large-up: 'large-up';
+$widescreen: 'widescreen';
+
+$breakpoints: (
+        $small '(max-width: #{$grid-medium - 1})',
+        $medium '(min-width: #{$grid-medium}) and (max-width: #{$grid-large - 1})',
+        $medium-down '(max-width: #{$grid-large - 1})',
+        $medium-up '(min-width: #{$grid-medium})',
+        $large '(min-width: #{$grid-large}) and (max-width: #{$grid-widescreen - 1})',
+        $large-down '(max-width: #{$grid-widescreen - 1})',
+        $large-up '(min-width: #{$grid-large})',
+        $widescreen '(min-width: #{$grid-widescreen})'
+);
+
+$breakpoint-has-widths: ('small', 'medium', 'medium-down', 'large');
+$breakpoint-has-push: ('medium', 'medium-down', 'large');
+$breakpoint-has-pull: ('medium', 'medium-down', 'large');

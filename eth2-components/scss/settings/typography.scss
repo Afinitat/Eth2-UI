@@ -1,0 +1,71 @@
+@import 'variables';
+
+// Text styles
+
+/* Set the font weight to normal */
+.text-normal {
+  font-weight: $font-weight-normal !important;
+}
+
+/* Set the font weight to bold */
+.text-bold {
+  font-weight: $font-weight-bold !important;
+}
+
+/* Set the font to italic */
+.text-italic {
+  font-style: italic !important;
+}
+
+/* Make text uppercase */
+.text-uppercase {
+  text-transform: uppercase !important;
+}
+
+/* Underline text */
+.text-underline {
+  text-decoration: underline !important;
+}
+
+/* Don't underline text */
+.no-underline {
+  text-decoration: none !important;
+}
+
+/* Don't wrap white space */
+.no-wrap {
+  white-space: nowrap !important;
+}
+
+/* Normal white space */
+.white-space {
+  white-space: normal !important;
+}
+
+/* Force long "words" to wrap if they exceed the width of the container */
+.break-word {
+  word-break: break-word !important;
+  // this is for backwards compatibility with browsers that don't respect overflow-wrap
+  word-wrap: break-word !important;
+  overflow-wrap: break-word !important;
+}
+
+.text-emphasized {
+  font-weight: $font-weight-bold;
+  color: $black;
+}
+
+// List styles
+.list-style-none {
+  list-style: none !important;
+}
+
+/* Set to monospace font */
+.text-mono {
+  font-family: $mono-font !important;
+}
+
+/* Disallow user from selecting text */
+.user-select-none {
+  user-select: none !important;
+}

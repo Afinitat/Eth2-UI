@@ -1,0 +1,10 @@
+// Box sizing
+
+@mixin transition($transitions...) {
+  $output: ();
+
+  @each $transition in $transitions {
+    $output: append($output, get-transition-properties($transition), comma);
+  }
+  transition: $output;
+}

@@ -8,11 +8,23 @@
 
 // Settings
 @import './settings/variables';
+@import './settings/colors';
+@import './settings/color-system';
+@import './settings/typography';
+
+// Globals
+@import './mixins/mixins';
+@import './globals/functions';
+@import './globals/grid';
 
 // Core
+@import "./core/base";
 @import './core/helpers';
 @import './core/layout';
 @import './core/media';
+@import './core/responsive-tables';
+@import './core/rte';
+@import './core/typography';
 
 // Components
 @import './components/buttons/buttons';

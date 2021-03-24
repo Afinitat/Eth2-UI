@@ -1,0 +1,26 @@
+/**
+ * Sets a media query for the specified breakpoint
+ *
+ * Usage:
+ * .selector {
+ *   @include media-query($medium-up) {
+ *     color: red;
+ *   }
+ * }
+ */
+@mixin media-query($media-query) {
+  $breakpoint-found: false;
+
+  @each $breakpoint in $breakpoints {
+    $name: nth($breakpoint, 1);
+    $declaration: nth($breakpoint, 2);
+
+    @if $media-query == $name and $declaration {
+      $breakpoint-found: true;
+
+      @media only screen and #{$declaration} {
+        @content;
+      }
+    }
+  }
+}

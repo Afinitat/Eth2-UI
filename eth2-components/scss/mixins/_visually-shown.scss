@@ -1,0 +1,16 @@
+/**
+ * Reverse the properties applied by @mixin visually-hidden
+ *
+ * Usage:
+ * .selector {
+ *   @include visually-shown(relative);
+ * }
+ */
+@mixin visually-shown($position: inherit) {
+  position: $position !important;
+  overflow: auto;
+  width: auto;
+  height: auto;
+  margin: 0;
+  clip: auto;
+}

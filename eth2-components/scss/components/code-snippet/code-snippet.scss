@@ -1,0 +1,22 @@
+//-----------------------------
+// Code
+//-----------------------------
+
+code {
+  font-family: $mono-font;
+  font-size: 1em;
+  line-height: 1.5em;
+  padding: 0;
+  background-color: rgba(0, 0, 0, .04);
+  border-radius: 0;
+
+  &:before {
+    content: '';
+  }
+}
+
+code,
+tt {
+  font-family: $mono-font;
+  padding: 0;
+}
