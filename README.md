@@ -34,6 +34,8 @@ Patterns are a simple, reusable solution to a design problem.
 A series of individual styles and components, with no framework tax, no framework silo.
 
 - Accordion
+- Avatar
+- Blockie
 - Breadcrumb
 - Button
 - Checkbox
@@ -41,11 +43,14 @@ A series of individual styles and components, with no framework tax, no framewor
 - Data table
 - Card component (or Tile)
 - Card group
+- Connection banner
 - Content block
+- EthAddress
 - Horizontal rule
 - Image
 - Link
 - List
+- QR Code
 - Select
 - Slider
 - Tag
