@@ -1,0 +1,15 @@
+//-----------------------------
+// Blockie
+//-----------------------------
+
+.blockie {
+  display: inline-block;
+  width: $ten-units;
+  height: $ten-units;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &:hover {
+    outline: none;
+  }
+}

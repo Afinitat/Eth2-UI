@@ -13,8 +13,8 @@ $border-radius-3: 8px !default;
 $border-radius: $border-radius-1 !default;
 
 // Typography
-$body-font: "Segoe UI", Helvetica, Arial, sans-serif !default;
-$mono-font: "SFMono-Regular", Consolas, Menlo, monospace !default;
+$body-font: -apple-system, 'BlinkMacSystemFont', 'San Francisco', 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif !default;
+$mono-font: Monaco, Consolas, 'Lucida Console', monospace !default;
 
 // Font weights
 $font-weight-bold: 600 !default;

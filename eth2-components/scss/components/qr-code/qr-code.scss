@@ -1,0 +1,22 @@
+//-----------------------------
+// QR Code
+//-----------------------------
+
+.qr-code {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: $two-units;
+
+  max-width: max-content;
+  padding: $three-units;
+
+  &__message {
+    color: $black;
+  }
+
+  &__error {
+    color: $red;
+  }
+}

@@ -4,6 +4,9 @@
 
 .breadcrumb {
   display: flex;
-  flex-wrap: wrap;
-  list-style: none;
+  flex-flow: row nowrap;
+}
+
+.breadcrumb + .breadcrumb {
+  margin-left: $two-units;
 }

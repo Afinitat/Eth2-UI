@@ -16,6 +16,7 @@
 @import './mixins/mixins';
 @import './globals/functions';
 @import './globals/grid';
+@import './globals/units';
 
 // Core
 @import "./core/base";
@@ -28,3 +29,17 @@
 
 // Components
 @import './components/buttons/buttons';
+@import './components/breadcrumb/breadcrumb';
+@import './components/links/links';
+@import './components/lists/lists';
+@import './components/printing/printing';
+
+// Ethereum UI
+@import './components/blockie/blockie';
+@import './components/eth-address/eth-address';
+@import './components/qr-code/qr-code';
+
+.container {
+  width: 800px;
+  margin: 40px 120px 0;
+}

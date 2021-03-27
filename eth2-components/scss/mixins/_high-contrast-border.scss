@@ -1,0 +1,8 @@
+@import '../globals/utilities';
+
+// Box sizing
+
+@mixin high-contrast-border($border-width: border-width()) {
+  border: $border-width solid transparent;
+  @content;
+}

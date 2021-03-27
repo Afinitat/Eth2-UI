@@ -1,0 +1,15 @@
+//-----------------------------
+// EthAddress
+//-----------------------------
+
+.eth-address {
+  display: inline-block;
+  vertical-align: middle;
+  min-width: 640px;
+  border: $border;
+  padding: $two-units;
+
+  font-family: $mono-font;
+  font-size: $font-size-small;
+  line-height: 2;
+}

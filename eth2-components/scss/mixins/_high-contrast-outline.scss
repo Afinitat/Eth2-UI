@@ -1,0 +1,8 @@
+@import '../globals/utilities';
+
+// Box sizing
+
+@mixin high-contrast-outline($border-width: border-width()) {
+  outline: $border-width solid transparent;
+  @content;
+}
