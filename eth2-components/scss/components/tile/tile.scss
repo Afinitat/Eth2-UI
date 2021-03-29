@@ -1,3 +1,90 @@
 //-----------------------------
 // Tile
 //-----------------------------
+
+.tile {
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 0;
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  max-width: 100%;
+}
+
+.tile {
+  max-width: 480px;
+  border: 2px solid;
+  padding: 3rem;
+
+  h3 {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-weight: 600;
+    margin: 0 0 1rem;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+  }
+
+}
+
+.tile__price {
+  font-size: 3rem;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+
+.tile__description {
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+.price_card {
+  display: flex;
+  flex-direction: column;
+  -moz-box-align: center;
+  align-items: center;
+  -moz-box-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 420px;
+  max-height: 192px;
+  border-radius: 4px;
+  border: $border;
+  padding: 1.5rem;
+}
+
+.price__change {
+  margin-right: 1rem;
+}
+
+.price__change-plus {
+  color: green
+}
+
+.price__change-minus {
+  color: red
+}
+
+.price__timeframe {
+  font-size: small;
+  line-height: 1.5;
+}
+
+.annual__rewards {
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+input[type=text] {
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+
+  float: left;
+  max-width: 8rem;
+}

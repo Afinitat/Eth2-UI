@@ -1,3 +1,4 @@
+// stylelint-disable selector-max-type
 * {
   box-sizing: border-box;
 }
@@ -11,6 +12,23 @@ button {
   line-height: inherit;
 }
 
+body {
+  font-family: $body-font;
+  font-size: $body-font-size;
+  line-height: $body-line-height;
+  color: var(--color-text-primary);
+  background-color: var(--color-bg-canvas);
+}
+
+a {
+  color: var(--color-text-link);
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
 b,
 strong {
   font-weight: $font-weight-bold;
@@ -18,14 +36,12 @@ strong {
 
 // Horizontal lines
 //
-hr,
-.rule {
+hr {
   height: 0;
-  // stylelint-disable-next-line primer/spacing
   margin: 15px 0;
   overflow: hidden;
   background: transparent;
-  border: 0;
+  border-bottom: $border-width $border-style;
   @include clearfix();
 }
 

@@ -1,0 +1,47 @@
+//-----------------------------
+// Icon
+//-----------------------------
+
+.icon {
+  display: inline-block;
+  vertical-align: middle;
+  width: $twenty-units;
+  height: $twenty-units;
+  fill: currentColor;
+
+  .no-svg & {
+    display: none;
+  }
+}
+
+.icon--wide {
+  width: 40px;
+}
+
+svg,
+symbol {
+  &.icon:not(.icon--full-color) {
+    circle,
+    ellipse,
+    g,
+    line,
+    path,
+    polygon,
+    polyline,
+    img {
+      max-width: 100%;
+    }
+  }
+}
+
+// Remaining accessible to screen readers
+.icon-fallback-text {
+  @include visually-hidden;
+
+  .no-svg & {
+    @include visually-shown(static);
+  }
+}
+
+// Icon directory and paths
+$icon-cdn-path: 'https://static2.sharepointonline.com/files/fabric/assets/icons' !default;

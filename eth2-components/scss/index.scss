@@ -14,12 +14,13 @@
 
 // Globals
 @import './mixins/mixins';
-@import './globals/functions';
+@import './functions/functions';
+@import './globals/spacing';
 @import './globals/grid';
-@import './globals/units';
 
 // Core
 @import "./core/base";
+@import './core/forms';
 @import './core/helpers';
 @import './core/layout';
 @import './core/media';
@@ -28,18 +29,26 @@
 @import './core/typography';
 
 // Components
-@import './components/buttons/buttons';
+@import './components/accordion/accordion';
+@import './components/address-forms/address-forms';
 @import './components/breadcrumb/breadcrumb';
+@import './components/buttons/buttons';
+@import './components/checkbox/checkbox';
+@import './components/code-snippet/code-snippet';
+@import './components/checkbox/checkbox';
+@import './components/data-table/data-table';
+@import './components/group/group';
+@import './components/icons/icons';
 @import './components/links/links';
 @import './components/lists/lists';
 @import './components/printing/printing';
+@import './components/responsive-image/responsive-image';
+@import './components/select/select';
+@import './components/slider/slider';
+@import './components/tag/tag';
+@import './components/tile/tile';
 
-// Ethereum UI
+// eth2
 @import './components/blockie/blockie';
 @import './components/eth-address/eth-address';
 @import './components/qr-code/qr-code';
-
-.container {
-  width: 800px;
-  margin: 40px 120px 0;
-}

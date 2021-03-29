@@ -1,6 +1,9 @@
 /**
  * Reverse the properties applied by @mixin visually-hidden
  *
+ * Accepts:
+ * - $position: {String} Positioning method for element
+ *
  * Usage:
  * .selector {
  *   @include visually-shown(relative);

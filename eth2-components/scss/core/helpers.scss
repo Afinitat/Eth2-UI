@@ -1,12 +1,26 @@
-@import '../mixins/clearfix';
-@import "../mixins/visually-hidden";
-
 .clearfix {
   @include clearfix;
 }
 
 .visually-hidden {
   @include visually-hidden;
+}
+
+.js-focus-hidden:focus {
+  outline: none;
+}
+
+.label-hidden {
+  @include visually-hidden;
+
+  // No placeholders, so force show labels
+  .no-placeholder & {
+    @include visually-shown;
+  }
+}
+
+.visually-shown {
+  @include visually-shown;
 }
 
 // Only show when JS is not supported

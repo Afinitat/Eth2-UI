@@ -1,5 +1,14 @@
-// Box sizing
-
+/**
+ * Outputs list of transition properties
+ *
+ * Accepts:
+ * - $transitions: {String} List of transition properties to set
+ *
+ * Usage:
+ * .selector {
+ *   @include transition(width, height 0.5s ease-in);
+ * }
+ */
 @mixin transition($transitions...) {
   $output: ();
 

@@ -1,10 +1,12 @@
-@import 'variables';
-
 // Text styles
+
+.small {
+  font-size: $font-size-small !important;
+}
 
 /* Set the font weight to normal */
 .text-normal {
-  font-weight: $font-weight-normal !important;
+  font-weight: $font-weight-regular !important;
 }
 
 /* Set the font weight to bold */
@@ -62,7 +64,7 @@
 
 /* Set to monospace font */
 .text-mono {
-  font-family: $mono-font !important;
+  font-family: $font-family-monospace !important;
 }
 
 /* Disallow user from selecting text */
