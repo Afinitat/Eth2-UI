@@ -34,7 +34,7 @@ Patterns are a simple, reusable solution to a design problem.
 A series of individual styles and components, with no framework tax, no framework silo.
 
 - Accordion
-- Avatar
+- Address Forms
 - Blockie
 - Breadcrumb
 - Button
@@ -46,17 +46,16 @@ A series of individual styles and components, with no framework tax, no framewor
 - Connection banner
 - Content block
 - EthAddress
+- Group
+- Icon
 - Horizontal rule
-- Image
+- Image (Responsive)
 - Link
 - List
 - QR Code
 - Select
 - Slider
 - Tag
-- Masthead
-- Footer
-- Pictogram item
 - Quote
 
 The included source files are written in Sass using SCSS syntax.
