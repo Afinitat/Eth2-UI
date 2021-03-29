@@ -1,3 +1,15 @@
 //-----------------------------
 // Buttons
 //-----------------------------
+
+.button {
+  display: inline-block;
+  vertical-align: middle;
+  width: auto;
+  border: 0;
+  text-align: center;
+  white-space: nowrap;
+  text-decoration: none;
+  user-select: none;
+  appearance: none;
+}

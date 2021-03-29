@@ -1,5 +1,11 @@
-// Clearfix
-
+/**
+ * Forces an element to self-clear its children
+ *
+ * Usage:
+ * .selector {
+ *   @include clearfix;
+ * }
+ */
 @mixin clearfix() {
   &::after {
     content: '';

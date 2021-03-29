@@ -1,6 +1,9 @@
 /**
  * Sets a media query for the specified breakpoint
  *
+ * Accepts:
+ * - $media-query: {String} Breakpoint variable (list found in variables.scss)
+ *
  * Usage:
  * .selector {
  *   @include media-query($medium-up) {

@@ -13,13 +13,30 @@ $border-radius-3: 8px !default;
 $border-radius: $border-radius-1 !default;
 
 // Typography
-$body-font: -apple-system, 'BlinkMacSystemFont', 'San Francisco', 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif !default;
-$mono-font: Monaco, Consolas, 'Lucida Console', monospace !default;
+$font-family-fallbacks: -apple-system, 'BlinkMacSystemFont', 'San Francisco', 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif !default;
+$font-family-monospace: Monaco, Consolas, 'Lucida Console', monospace !default;
+$font-family-sans: $font-family-fallbacks;
 
-// Font weights
-$font-weight-bold: 600 !default;
-$font-weight-normal: 400 !default;
-$font-weight-light: 300 !default;
+// Language-specific font stacks
+$font-family-arabic: $font-family-fallbacks !default;
+$font-family-chinese-simplified: Verdana, Simsun, $font-family-fallbacks !default;
+$font-family-chinese-traditional: Pmingliu, $font-family-fallbacks !default;
+$font-family-japanese: Meiryo, Osaka, $font-family-fallbacks !default;
+$font-family-korean: Gulim, $font-family-fallbacks !default;
+
+$font-heading: $font-family-fallbacks;
+$font-body: $font-family-fallbacks;
+
+$font-weight-bold: 700 !default;
+$font-weight-semibold: 600 !default;
+$font-weight-regular: 400 !default;
+$font-weight-semilight: 300 !default;
+$font-weight-light: 100 !default;
+
+$font-body-weight: $font-weight-regular;
+$font-body-style: normal !default;
+$font-body-bold-weight: $font-weight-semibold;
+$font-body-light-weight: $font-weight-light;
 
 // Heading sizes - Mobile
 $h0-size-mobile: 32px !default;
@@ -36,7 +53,12 @@ $h4-size: 16px !default;
 $h5-size: 14px !default;
 $h6-size: 12px !default;
 
+$font-size: 14px !default;
 $font-size-small: 12px !default;
+
+$body-font: $font-family-sans;
+$body-font-size: $font-size;
+$body-line-height: 1 !default;
 
 // Transitions
 $transition-duration: 250ms;
@@ -47,7 +69,7 @@ $grid-medium: 37.5em; // 600px (Typically smart phones)
 $grid-large: 56.25em; // 900px (Typically tablet devices)
 $grid-widescreen: 80em; // 1280px
 $grid-max-width: 65em; // 1040px (Typically desktop or laptop screens)
-$grid-gutter: 1.875em;
+$grid-gutter: 1.875em; // 30px
 
 // Breakpoints used with the media-query mixin
 $small: 'small';
