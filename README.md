@@ -74,3 +74,7 @@ eth2-components/
 │           └── accordion.scss
 └── src
 ```
+
+### Eth2-UI Sample
+
+![Eth2-UI Sample](https://raw.githubusercontent.com/Afinitat/Eth2-UI/main/Eth2%20UI%20Sample.png)
