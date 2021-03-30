@@ -77,4 +77,4 @@ eth2-components/
 
 ### Eth2-UI Sample
 
-![Eth2-UI Sample](https://raw.githubusercontent.com/Afinitat/Eth2-UI/main/Eth2%20UI%20Sample.png)
+![Eth2-UI Sample](https://raw.githubusercontent.com/Afinitat/Eth2-UI/main/Eth2-UI%20Example.png)
