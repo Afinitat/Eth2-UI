@@ -76,7 +76,7 @@ $class-type: unquote(".");
 #{$class-type}grid__item {
   float: left;
   min-height: 1px;
-  padding-left: $grid-gutter;
+  padding: 0 $grid-gutter;
   vertical-align: top;
   @if $mobile-first == true {
     width: 100%;
@@ -106,7 +106,7 @@ $class-type: unquote(".");
   margin-left: 0;
 
   > #{$class-type}grid__item {
-    padding-left: 0;
+    padding: 0;
   }
 }
 

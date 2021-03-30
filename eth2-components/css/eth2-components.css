@@ -509,7 +509,7 @@ template {
 .grid__item {
   float: left;
   min-height: 1px;
-  padding-left: 1.875em;
+  padding: 0 1.875em;
   vertical-align: top;
   width: 100%;
   -webkit-box-sizing: border-box;
@@ -536,7 +536,7 @@ template {
   margin-left: 0;
 }
 .grid--full > .grid__item {
-  padding-left: 0;
+  padding: 0;
 }
 
 /*============================================================================
@@ -967,20 +967,20 @@ template {
   }
 
   .grid-uniform .small--one-half:nth-child(2n+1),
-.grid-uniform .small--one-third:nth-child(3n+1),
-.grid-uniform .small--one-quarter:nth-child(4n+1),
-.grid-uniform .small--one-fifth:nth-child(5n+1),
-.grid-uniform .small--one-sixth:nth-child(6n+1),
-.grid-uniform .small--two-sixths:nth-child(3n+1),
-.grid-uniform .small--three-sixths:nth-child(2n+1),
-.grid-uniform .small--two-eighths:nth-child(4n+1),
-.grid-uniform .small--four-eighths:nth-child(2n+1),
-.grid-uniform .small--five-tenths:nth-child(2n+1),
-.grid-uniform .small--one-twelfth:nth-child(12n+1),
-.grid-uniform .small--two-twelfths:nth-child(6n+1),
-.grid-uniform .small--three-twelfths:nth-child(4n+1),
-.grid-uniform .small--four-twelfths:nth-child(3n+1),
-.grid-uniform .small--six-twelfths:nth-child(2n+1) {
+  .grid-uniform .small--one-third:nth-child(3n+1),
+  .grid-uniform .small--one-quarter:nth-child(4n+1),
+  .grid-uniform .small--one-fifth:nth-child(5n+1),
+  .grid-uniform .small--one-sixth:nth-child(6n+1),
+  .grid-uniform .small--two-sixths:nth-child(3n+1),
+  .grid-uniform .small--three-sixths:nth-child(2n+1),
+  .grid-uniform .small--two-eighths:nth-child(4n+1),
+  .grid-uniform .small--four-eighths:nth-child(2n+1),
+  .grid-uniform .small--five-tenths:nth-child(2n+1),
+  .grid-uniform .small--one-twelfth:nth-child(12n+1),
+  .grid-uniform .small--two-twelfths:nth-child(6n+1),
+  .grid-uniform .small--three-twelfths:nth-child(4n+1),
+  .grid-uniform .small--four-twelfths:nth-child(3n+1),
+  .grid-uniform .small--six-twelfths:nth-child(2n+1) {
     clear: both;
   }
 }
@@ -1195,20 +1195,20 @@ template {
   }
 
   .grid-uniform .medium--one-half:nth-child(2n+1),
-.grid-uniform .medium--one-third:nth-child(3n+1),
-.grid-uniform .medium--one-quarter:nth-child(4n+1),
-.grid-uniform .medium--one-fifth:nth-child(5n+1),
-.grid-uniform .medium--one-sixth:nth-child(6n+1),
-.grid-uniform .medium--two-sixths:nth-child(3n+1),
-.grid-uniform .medium--three-sixths:nth-child(2n+1),
-.grid-uniform .medium--two-eighths:nth-child(4n+1),
-.grid-uniform .medium--four-eighths:nth-child(2n+1),
-.grid-uniform .medium--five-tenths:nth-child(2n+1),
-.grid-uniform .medium--one-twelfth:nth-child(12n+1),
-.grid-uniform .medium--two-twelfths:nth-child(6n+1),
-.grid-uniform .medium--three-twelfths:nth-child(4n+1),
-.grid-uniform .medium--four-twelfths:nth-child(3n+1),
-.grid-uniform .medium--six-twelfths:nth-child(2n+1) {
+  .grid-uniform .medium--one-third:nth-child(3n+1),
+  .grid-uniform .medium--one-quarter:nth-child(4n+1),
+  .grid-uniform .medium--one-fifth:nth-child(5n+1),
+  .grid-uniform .medium--one-sixth:nth-child(6n+1),
+  .grid-uniform .medium--two-sixths:nth-child(3n+1),
+  .grid-uniform .medium--three-sixths:nth-child(2n+1),
+  .grid-uniform .medium--two-eighths:nth-child(4n+1),
+  .grid-uniform .medium--four-eighths:nth-child(2n+1),
+  .grid-uniform .medium--five-tenths:nth-child(2n+1),
+  .grid-uniform .medium--one-twelfth:nth-child(12n+1),
+  .grid-uniform .medium--two-twelfths:nth-child(6n+1),
+  .grid-uniform .medium--three-twelfths:nth-child(4n+1),
+  .grid-uniform .medium--four-twelfths:nth-child(3n+1),
+  .grid-uniform .medium--six-twelfths:nth-child(2n+1) {
     clear: both;
   }
 }
@@ -1423,20 +1423,20 @@ template {
   }
 
   .grid-uniform .medium-down--one-half:nth-child(2n+1),
-.grid-uniform .medium-down--one-third:nth-child(3n+1),
-.grid-uniform .medium-down--one-quarter:nth-child(4n+1),
-.grid-uniform .medium-down--one-fifth:nth-child(5n+1),
-.grid-uniform .medium-down--one-sixth:nth-child(6n+1),
-.grid-uniform .medium-down--two-sixths:nth-child(3n+1),
-.grid-uniform .medium-down--three-sixths:nth-child(2n+1),
-.grid-uniform .medium-down--two-eighths:nth-child(4n+1),
-.grid-uniform .medium-down--four-eighths:nth-child(2n+1),
-.grid-uniform .medium-down--five-tenths:nth-child(2n+1),
-.grid-uniform .medium-down--one-twelfth:nth-child(12n+1),
-.grid-uniform .medium-down--two-twelfths:nth-child(6n+1),
-.grid-uniform .medium-down--three-twelfths:nth-child(4n+1),
-.grid-uniform .medium-down--four-twelfths:nth-child(3n+1),
-.grid-uniform .medium-down--six-twelfths:nth-child(2n+1) {
+  .grid-uniform .medium-down--one-third:nth-child(3n+1),
+  .grid-uniform .medium-down--one-quarter:nth-child(4n+1),
+  .grid-uniform .medium-down--one-fifth:nth-child(5n+1),
+  .grid-uniform .medium-down--one-sixth:nth-child(6n+1),
+  .grid-uniform .medium-down--two-sixths:nth-child(3n+1),
+  .grid-uniform .medium-down--three-sixths:nth-child(2n+1),
+  .grid-uniform .medium-down--two-eighths:nth-child(4n+1),
+  .grid-uniform .medium-down--four-eighths:nth-child(2n+1),
+  .grid-uniform .medium-down--five-tenths:nth-child(2n+1),
+  .grid-uniform .medium-down--one-twelfth:nth-child(12n+1),
+  .grid-uniform .medium-down--two-twelfths:nth-child(6n+1),
+  .grid-uniform .medium-down--three-twelfths:nth-child(4n+1),
+  .grid-uniform .medium-down--four-twelfths:nth-child(3n+1),
+  .grid-uniform .medium-down--six-twelfths:nth-child(2n+1) {
     clear: both;
   }
 }
@@ -1651,20 +1651,20 @@ template {
   }
 
   .grid-uniform .large--one-half:nth-child(2n+1),
-.grid-uniform .large--one-third:nth-child(3n+1),
-.grid-uniform .large--one-quarter:nth-child(4n+1),
-.grid-uniform .large--one-fifth:nth-child(5n+1),
-.grid-uniform .large--one-sixth:nth-child(6n+1),
-.grid-uniform .large--two-sixths:nth-child(3n+1),
-.grid-uniform .large--three-sixths:nth-child(2n+1),
-.grid-uniform .large--two-eighths:nth-child(4n+1),
-.grid-uniform .large--four-eighths:nth-child(2n+1),
-.grid-uniform .large--five-tenths:nth-child(2n+1),
-.grid-uniform .large--one-twelfth:nth-child(12n+1),
-.grid-uniform .large--two-twelfths:nth-child(6n+1),
-.grid-uniform .large--three-twelfths:nth-child(4n+1),
-.grid-uniform .large--four-twelfths:nth-child(3n+1),
-.grid-uniform .large--six-twelfths:nth-child(2n+1) {
+  .grid-uniform .large--one-third:nth-child(3n+1),
+  .grid-uniform .large--one-quarter:nth-child(4n+1),
+  .grid-uniform .large--one-fifth:nth-child(5n+1),
+  .grid-uniform .large--one-sixth:nth-child(6n+1),
+  .grid-uniform .large--two-sixths:nth-child(3n+1),
+  .grid-uniform .large--three-sixths:nth-child(2n+1),
+  .grid-uniform .large--two-eighths:nth-child(4n+1),
+  .grid-uniform .large--four-eighths:nth-child(2n+1),
+  .grid-uniform .large--five-tenths:nth-child(2n+1),
+  .grid-uniform .large--one-twelfth:nth-child(12n+1),
+  .grid-uniform .large--two-twelfths:nth-child(6n+1),
+  .grid-uniform .large--three-twelfths:nth-child(4n+1),
+  .grid-uniform .large--four-twelfths:nth-child(3n+1),
+  .grid-uniform .large--six-twelfths:nth-child(2n+1) {
     clear: both;
   }
 }
@@ -2649,13 +2649,13 @@ picture {
     display: block;
   }
   .responsive-table tr,
-.responsive-table td {
+  .responsive-table td {
     float: left;
     clear: both;
     width: 100%;
   }
   .responsive-table th,
-.responsive-table td {
+  .responsive-table td {
     display: block;
     margin: 0;
     padding: 0.9375em;
@@ -2922,22 +2922,29 @@ a:after {
 }
 
 .tag {
+  background-color: #f5f5f5;
+  padding: 0.25rem 0.5rem;
+  border-width: 0.1rem;
+  border-style: solid;
+  border-color: transparent;
+  border-radius: 15rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: normal;
+  color: #ffffff;
+  white-space: nowrap;
   display: inline-flex;
   align-items: center;
-  justify-content: center;
-  padding: 0 0.75rem;
-  height: 1.5rem;
-  max-width: 100%;
-  min-width: 1rem;
-  margin: 0.75rem;
-  border-radius: 1rem;
-  cursor: default;
+  margin-bottom: 0.5rem;
+}
+.tag + .tag {
+  margin-left: 0.5rem;
 }
 .tag:not(:first-child) {
   margin-left: 0;
 }
 .tag:hover {
-  cursor: not-allowed;
+  cursor: pointer;
 }
 
 .tag__label {
@@ -2945,6 +2952,142 @@ a:after {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+}
+
+.tag-0x {
+  background-color: #302c2c;
+}
+
+.tag-aave {
+  background-color: #a5378c;
+}
+
+.tag-algorand {
+  background-color: black;
+}
+
+.tag-bancor__network {
+  background-color: #000b20;
+}
+
+.tag-basic__attention {
+  background-color: #ff5000;
+}
+
+.tag-binance {
+  background-color: #f0b90b;
+}
+
+.tag-bitcoin {
+  background-color: #f7931a;
+}
+
+.tag-bitcoin__cash {
+  background-color: #8dc351;
+}
+
+.tag-cardano {
+  background-color: #0033ad;
+}
+
+.tag-celo {
+  background-color: #fbcc5c;
+}
+
+.tag-chainlink {
+  background-color: #0667d0;
+}
+
+.tag-compound {
+  background-color: #00d395;
+}
+
+.tag-dai {
+  background-color: #ffb74d;
+}
+
+.tag-dash {
+  background-color: #008de4;
+}
+
+.tag-decentraland {
+  background-color: #b8afa2;
+}
+
+.tag-ethereum {
+  background-color: #8e76ff;
+}
+
+.tag-ethereum__classic {
+  background-color: #59d4af;
+}
+
+.tag-filecoin {
+  background-color: #0e79fe;
+}
+
+.tag-litecoin {
+  background-color: #a6a9aa;
+}
+
+.tag-loopring {
+  background-color: #1a61ff;
+}
+
+.tag-maker {
+  background-color: #1aab9b;
+}
+
+.tag-polygon {
+  background-color: #8247e5;
+}
+
+.tag-ren {
+  background-color: #001e3d;
+}
+
+.tag-stellar {
+  background-color: black;
+}
+
+.tag-synthetix {
+  background-color: #0a0118;
+}
+
+.tag-sushiswap {
+  background-color: #f055a2;
+}
+
+.tag-tezos {
+  background-color: #2c7df7;
+}
+
+.tag-the__graph {
+  background-color: #5227e8;
+}
+
+.tag-uma {
+  background-color: #ff4a4a;
+}
+
+.tag-uniswap {
+  background-color: #ff007a;
+}
+
+.tag-usdcoin {
+  background-color: #2775ca;
+}
+
+.tag-wrapped__bitcoin {
+  background-color: #1e182a;
+}
+
+.tag-yearn__finance {
+  background-color: #0667d0;
+}
+
+.tag-zcash {
+  background-color: #0667d0;
 }
 
 .tile {
@@ -3032,8 +3175,8 @@ input[type=text] {
 
 .blockie {
   display: inline-block;
-  width: 5rem;
-  height: 5rem;
+  width: 24px;
+  height: 24px;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -3041,10 +3184,26 @@ input[type=text] {
   outline: none;
 }
 
+.blockie__small {
+  width: 12px;
+  height: 12px;
+}
+.blockie__small:hover {
+  outline: none;
+}
+
+.blockie__large {
+  width: 36px;
+  height: 36px;
+}
+.blockie__large:hover {
+  outline: none;
+}
+
 .eth-address {
   display: inline-block;
   vertical-align: middle;
-  min-width: 480px;
+  width: 20rem;
   border: 1px #000000 solid;
   padding: 0.5rem;
   font-family: Monaco, Consolas, "Lucida Console", monospace;
@@ -3068,5 +3227,3 @@ input[type=text] {
 .qr-code__error {
   color: #ee204d;
 }
-
-/*# sourceMappingURL=eth2-components.css.map */

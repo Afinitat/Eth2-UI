@@ -4,10 +4,28 @@
 
 .blockie {
   display: inline-block;
-  width: $twenty-units;
-  height: $twenty-units;
+  width: 24px;
+  height: 24px;
   background-size: cover;
   background-repeat: no-repeat;
+
+  &:hover {
+    outline: none;
+  }
+}
+
+.blockie__small {
+  width: 12px;
+  height: 12px;
+
+  &:hover {
+    outline: none;
+  }
+}
+
+.blockie__large {
+  width: 36px;
+  height: 36px;
 
   &:hover {
     outline: none;
