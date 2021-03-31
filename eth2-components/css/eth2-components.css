@@ -2792,15 +2792,70 @@ a:focus {
 }
 
 .button {
-  display: inline-block;
-  vertical-align: middle;
+  align-items: center;
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: flex-start;
+  line-height: 3.125rem;
+  min-height: 3.125rem;
+  height: 3.125rem;
+  padding: 0 1.25rem;
+  position: relative;
   width: auto;
   border: 0;
-  text-align: center;
+  text-align: left;
   white-space: nowrap;
   text-decoration: none;
+  text-transform: uppercase;
   user-select: none;
   appearance: none;
+  margin: 0;
+  transition: transform 0.1s cubic-bezier(0.5, 0, 0.5, 1);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.125rem;
+}
+.button:disabled, .button:hover:disabled, .button:focus:disabled {
+  color: #a6a6a6;
+  background: #a6a6a6;
+  border-color: #a6a6a6;
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+.button--primary {
+  background-color: #000000;
+  color: #ffffff;
+  width: 20rem;
+}
+.button--primary:active {
+  border: none;
+  transform: translate(3px, 3px);
+}
+.button--primary::before, .button--primary::after {
+  content: "";
+  display: block;
+  position: absolute;
+}
+.button--primary::before {
+  border-bottom: 1px #000000 solid;
+  border-left: 1px #000000 solid;
+  bottom: -0.1875rem;
+  height: 0.1875rem;
+  left: 0.1875rem;
+  width: 100%;
+}
+.button--primary::after {
+  border-right: 1px #000000 solid;
+  border-top: 1px #000000 solid;
+  height: 100%;
+  right: -0.1875rem;
+  top: 0.1875rem;
+  width: 0.1875rem;
+}
+
+.button--full-width {
+  width: 100%;
 }
 
 code {

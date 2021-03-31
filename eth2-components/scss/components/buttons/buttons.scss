@@ -3,13 +3,81 @@
 //-----------------------------
 
 .button {
-  display: inline-block;
-  vertical-align: middle;
+  align-items: center;
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: flex-start;
+  line-height: 3.125rem;
+  min-height: 3.125rem;
+  height: 3.125rem;
+  padding: 0 1.25rem;
+  position: relative;
   width: auto;
   border: 0;
-  text-align: center;
+  text-align: left;
   white-space: nowrap;
   text-decoration: none;
+  text-transform: uppercase;
   user-select: none;
   appearance: none;
+
+  margin: 0;
+  transition: transform 0.1s cubic-bezier(0.5, 0, 0.5, 1);
+
+  font-size: .8rem;
+  font-weight: 700;
+  letter-spacing: .125rem;
+
+  &:disabled,
+  &:hover:disabled,
+  &:focus:disabled {
+    color: $quicksilver;
+    background: $quicksilver;
+    border-color: $quicksilver;
+    box-shadow: none;
+    cursor: not-allowed;
+  }
+
 }
+
+.button--primary {
+
+  background-color: $black;
+  color: $white;
+
+  width: 20rem;
+
+  &:active {
+    border: none;
+    transform: translate(3px, 3px);
+  }
+
+  &::before, &::after {
+    content: "";
+    display: block;
+    position: absolute;
+  }
+
+  &::before {
+    border-bottom: $border;
+    border-left: $border;
+    bottom: -.1875rem;
+    height: .1875rem;
+    left: .1875rem;
+    width: 100%;
+  }
+
+  &::after {
+    border-right: $border;
+    border-top: $border;
+    height: 100%;
+    right: -.1875rem;
+    top: .1875rem;
+    width: .1875rem;
+  }
+}
+
+.button--full-width {
+  width: 100%
+}
+
