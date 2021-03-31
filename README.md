@@ -33,12 +33,9 @@ Patterns are a simple, reusable solution to a design problem.
 ### Components
 A series of individual styles and components, with no framework tax, no framework silo.
 
-- Accordion
-- Address Forms
 - Blockie
 - Breadcrumb
 - Button
-- Checkbox
 - Code snippet
 - Data table
 - Card component (or Tile)
@@ -47,16 +44,12 @@ A series of individual styles and components, with no framework tax, no framewor
 - Content block
 - EthAddress
 - Group
-- Icon
 - Horizontal rule
 - Image (Responsive)
 - Link
 - List
 - QR Code
-- Select
-- Slider
 - Tag
-- Quote
 
 The included source files are written in Sass using SCSS syntax.
 
@@ -70,8 +63,8 @@ eth2-components/
 │   └── eth2-components.min.js
 ├── scss
 │   └── components
-│       └── accordion
-│           └── accordion.scss
+│       └── tag
+│           └── tag.scss
 └── src
 ```
 
