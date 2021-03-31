@@ -8,41 +8,6 @@ $horizontal-padding: .5rem;
 $vertical-padding: .25rem;
 $tag-font-size: .75rem;
 
-$zero__x-color: rgb(48, 44, 44);
-$aave-color: rgb(165, 55, 140);
-$algorand-color: rgb(0, 0, 0);
-$bancor__network: rgb(0, 11, 32);
-$basic__attention-color: rgb(255, 80, 0);
-$binance-color: rgb(240, 185, 11);
-$bitcoin-color: rgb(247, 147, 26);
-$bitcoin__cash-color: rgb(141, 195, 81);
-$cardano-color: rgb(0, 51, 173);
-$celo-color: rgb(251, 204, 92);
-$chainlink-color: rgb(6, 103, 208);
-$compound-color: rgb(0, 211, 149);
-$dai-color: rgb(255, 183, 77);
-$dash-color: rgb(0, 141, 228);
-$decentraland-color: rgb(184, 175, 162);
-$ethereum-color: rgb(142, 118, 255);
-$ethereum__classic-color: rgb(89, 212, 175);
-$filecoin-color: rgb(14, 121, 254);
-$litecoin-color: rgb(166, 169, 170);
-$loopring-color: rgb(26, 97, 255);
-$maker-color: rgb(26, 171, 155);
-$polygon-color: rgb(130, 71, 229);
-$ren-color: rgb(0, 30, 61);
-$stellar-color: rgb(0, 0, 0);
-$synthetix-color: rgb(10, 1, 24);
-$sushiswap-color: rgb(240, 85, 162);
-$tezos-color: rgb(44, 125, 247);
-$the__graph-color: rgb(82, 39, 232);
-$uma-color: rgb(255, 74, 74);
-$uniswap-color: rgb(255, 0, 122);
-$usdcoin-color: rgb(39, 117, 202);
-$wrapped__bitcoin-color: rgb(30, 24, 42);
-$yearn__finance-color: rgb(6, 103, 208);
-$zcash-color: rgb(236, 178, 68);
-
 .tag {
   background-color: $whitesmoke;
   padding: $vertical-padding $horizontal-padding;
@@ -92,8 +57,24 @@ $zcash-color: rgb(236, 178, 68);
   background-color: $algorand-color;
 }
 
+.tag-ankr {
+  background-color: $ankr-color;
+}
+
+.tag-augur {
+  background-color: $augur-color;
+}
+
+.tag-balancer {
+  background-color: $balancer-color;
+}
+
 .tag-bancor__network {
-  background-color: $bancor__network;
+  background-color: $bancor__network-color;
+}
+
+.tag-band__protocol {
+  background-color: $band__protocol-color;
 }
 
 .tag-basic__attention {
@@ -124,8 +105,20 @@ $zcash-color: rgb(236, 178, 68);
   background-color: $chainlink-color;
 }
 
+.tag-civic {
+  background-color: $civic-color;
+}
+
 .tag-compound {
   background-color: $compound-color;
+}
+
+.tag-cosmos {
+  background-color: $cosmos-color;
+}
+
+.tag-curve__dao {
+  background-color: $curve__dao-color;
 }
 
 .tag-dai {
@@ -140,6 +133,14 @@ $zcash-color: rgb(236, 178, 68);
   background-color: $decentraland-color;
 }
 
+.tag-district0x {
+  background-color: $district0x-color;
+}
+
+.tag-eos {
+  background-color: $eos-color;
+}
+
 .tag-ethereum {
   background-color: $ethereum-color;
 }
@@ -152,16 +153,40 @@ $zcash-color: rgb(236, 178, 68);
   background-color: $filecoin-color;
 }
 
+.tag-kyber__network {
+  background-color: $kyber__network-color;
+}
+
 .tag-litecoin {
   background-color: $litecoin-color;
 }
 
-.tag-loopring{
+.tag-loopring {
   background-color: $loopring-color;
 }
 
 .tag-maker {
   background-color: $maker-color;
+}
+
+.tag-maker {
+  background-color: $maker-color;
+}
+
+.tag-nucypher {
+  background-color: $nucypher-color;
+}
+
+.tag-numeraire {
+  background-color: $numeraire-color;
+}
+
+.tag-omg__network {
+  background-color: $omg__network-color;
+}
+
+.tag-orchid {
+  background-color: $orchid-color;
 }
 
 .tag-polygon {
@@ -172,8 +197,16 @@ $zcash-color: rgb(236, 178, 68);
   background-color: $ren-color;
 }
 
+.tag-skale {
+  background-color: $skale-color;
+}
+
 .tag-stellar {
   background-color: $stellar-color;
+}
+
+.tag-storj {
+  background-color: $storj-color;
 }
 
 .tag-synthetix {
@@ -213,6 +246,5 @@ $zcash-color: rgb(236, 178, 68);
 }
 
 .tag-zcash {
-  background-color: $yearn__finance-color;
+  background-color: $zcash-color;
 }
-

@@ -2659,6 +2659,18 @@ picture {
   max-width: 100%;
 }
 
+.navbar {
+  height: 3rem;
+  margin: 0 0 1.5rem;
+  background-color: #000000;
+}
+
+.footer {
+  height: 30rem;
+  margin: 15rem 0 0;
+  background-color: #8e76ff;
+}
+
 @media only screen and (max-width: 36.5em) {
   .responsive-table {
     width: 100%;
@@ -3042,8 +3054,24 @@ a:after {
   background-color: black;
 }
 
+.tag-ankr {
+  background-color: #006dff;
+}
+
+.tag-augur {
+  background-color: #553580;
+}
+
+.tag-balancer {
+  background-color: #1d282a;
+}
+
 .tag-bancor__network {
   background-color: #000b20;
+}
+
+.tag-band__protocol {
+  background-color: #516ffa;
 }
 
 .tag-basic__attention {
@@ -3074,8 +3102,20 @@ a:after {
   background-color: #0667d0;
 }
 
+.tag-civic {
+  background-color: #3ab03e;
+}
+
 .tag-compound {
   background-color: #00d395;
+}
+
+.tag-cosmos {
+  background-color: #2e3148;
+}
+
+.tag-curve__dao {
+  background-color: #5d00fa;
 }
 
 .tag-dai {
@@ -3090,6 +3130,14 @@ a:after {
   background-color: #b8afa2;
 }
 
+.tag-district0x {
+  background-color: #2c398f;
+}
+
+.tag-eos {
+  background-color: black;
+}
+
 .tag-ethereum {
   background-color: #8e76ff;
 }
@@ -3100,6 +3148,10 @@ a:after {
 
 .tag-filecoin {
   background-color: #0e79fe;
+}
+
+.tag-kyber__network {
+  background-color: #31cb9e;
 }
 
 .tag-litecoin {
@@ -3114,6 +3166,26 @@ a:after {
   background-color: #1aab9b;
 }
 
+.tag-maker {
+  background-color: #1aab9b;
+}
+
+.tag-nucypher {
+  background-color: #1e65f3;
+}
+
+.tag-numeraire {
+  background-color: #1aab9b;
+}
+
+.tag-omg__network {
+  background-color: #101010;
+}
+
+.tag-orchid {
+  background-color: #5f45ba;
+}
+
 .tag-polygon {
   background-color: #8247e5;
 }
@@ -3122,8 +3194,16 @@ a:after {
   background-color: #001e3d;
 }
 
+.tag-skale {
+  background-color: black;
+}
+
 .tag-stellar {
   background-color: black;
+}
+
+.tag-storj {
+  background-color: #0044c5;
 }
 
 .tag-synthetix {
@@ -3163,7 +3243,7 @@ a:after {
 }
 
 .tag-zcash {
-  background-color: #0667d0;
+  background-color: #ecb244;
 }
 
 .tile {
