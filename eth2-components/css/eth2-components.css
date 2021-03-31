@@ -3123,7 +3123,7 @@ a:after {
 
 .tile {
   max-width: 30rem;
-  border: 2px solid;
+  border: 0.125rem solid;
   padding: 3rem;
 }
 .tile h3 {
@@ -3191,7 +3191,7 @@ input[type=text] {
   margin: 0;
   padding: 0;
   float: left;
-  max-width: 10.625rem;
+  max-width: 7rem;
 }
 
 .blockie {

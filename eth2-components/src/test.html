@@ -245,15 +245,17 @@
 
                 <h3>Enter the amount you are staking (ETH)</h3>
 
-                <span style="float: left; padding: 2rem 1rem 0 0; font-size: 1.5rem">
-                    ETH
-                </span>
+                <p>
+                    <span style="float: left; padding: 2rem 1rem 0 0; font-size: 1.5rem">
+                        ETH
+                    </span>
 
-                <input class="tile__price text-emphasized"
-                       type="text"
-                       id="amountInput"
-                       value="32"
-                       readonly>
+                    <input class="tile__price text-emphasized"
+                           type="text"
+                           id="amountInput"
+                           value="32"
+                           readonly>
+                </p>
 
                 <input id="rangeInput" type="range" value="32" min="32" max="4096" step="32"
                        oninput="updateTextInput(this.value);"
@@ -485,11 +487,12 @@
         let ethValue = 1725;
         let percentageStaked = 0.05;
         let percentageReward = 0.07;
+
         document.getElementById('amountInput').value = val;
         document.getElementById('validatorsInput').value = val / minStaking;
         document.getElementById('valueInput').value = val * ethValue;
         document.getElementById('stakedInput').value = val * ethValue * percentageStaked;
-        document.getElementById('rewardInput').value = val * percentageReward;
+        document.getElementById('rewardInput').value = (Math.round((val * percentageReward) * 100) / 100).toFixed(6);
     }
 </script>
 
