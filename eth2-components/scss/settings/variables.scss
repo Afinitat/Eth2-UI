@@ -58,7 +58,9 @@ $font-size-small: 12px !default;
 
 $body-font: $font-family-sans;
 $body-font-size: $font-size;
-$body-line-height: 1 !default;
+$body-line-height: 1.5 !default;
+
+$font-body-size: $font-size;
 
 // Transitions
 $transition-duration: 250ms;
@@ -80,6 +82,9 @@ $large: 'large';
 $large-down: 'large-down';
 $large-up: 'large-up';
 $widescreen: 'widescreen';
+
+$min: min-width;
+$max: max-width;
 
 $breakpoints: (
         $small '(max-width: #{$grid-medium - 1})',

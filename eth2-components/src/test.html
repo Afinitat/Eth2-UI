@@ -11,7 +11,7 @@
 
 <div class="container">
 
-    <div class="section wrapper">
+    <div class="wrapper">
 
         <div class="grid__item one-whole">
 
@@ -237,16 +237,13 @@
 
         </div>
 
-    </div>
+        <div class="grid__item one-whole">
 
-    <div class="grid__item one-whole">
+            <h3>ETH2 staking UI</h3>
 
-        <h3>Beacon Chain</h3>
+            <div class="tile calculator">
 
-        <div class="tile calculator">
-            <h3>Enter the amount you are staking (ETH)</h3>
-
-            <div class="row">
+                <h3>Enter the amount you are staking (ETH)</h3>
 
                 <span style="float: left; padding: 2rem 1rem 0 0; font-size: 1.5rem">
                     ETH
@@ -257,34 +254,59 @@
                        id="amountInput"
                        value="32"
                        readonly>
+
                 <input id="rangeInput" type="range" value="32" min="32" max="4096" step="32"
                        oninput="updateTextInput(this.value);"
                 >
 
-                <hr style="border: none">
+                <div class="grid grid--full">
 
-            </div>
+                    <div class="grid__item one-half">
 
-            <div class="row">
+                        <hr style="border: none">
 
-                <div class="styled__group">
-                    <div class="styled__hint">Number of Validators</div>
-                    <input class="styled__value text-emphasized" style="margin-bottom: 3.25rem"
-                           type="text"
-                           id="validatorsInput"
-                           value="1">
+                    </div>
+
                 </div>
-
-            </div>
-
-            <div class="row">
 
                 <div class="grid grid--full">
 
                     <div class="grid__item one-half">
 
                         <div class="styled__group">
-                            <div class="styled__hint">Total ETH Supply Staked</div>
+                            <div class="styled__hint">ETH per<br>Validator:</div>
+
+                            <div class="styled__value text-emphasized">
+                                32
+                                <span style="font-size: 1rem;">
+                                    ETH
+                                </span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="grid__item one-half">
+
+                        <div class="styled__group">
+                            <div class="styled__hint">Number of<br>Validators:</div>
+                            <input class="styled__value text-emphasized" style="margin-bottom: 3.25rem"
+                                   type="text"
+                                   id="validatorsInput"
+                                   value="1">
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="grid grid--full">
+
+                    <div class="grid__item one-half">
+
+                        <div class="styled__group">
+                            <div class="styled__hint">Expected<br>Stake Rate:</div>
 
                             <div class="styled__value text-emphasized">
                                 5
@@ -299,9 +321,9 @@
                     <div class="grid__item one-half">
 
                         <div class="styled__group">
-                            <div class="styled__hint">Annual Reward Rate</div>
+                            <div class="styled__hint">Expected<br>Yield:</div>
                             <div class="styled__value text-emphasized">
-                                6.67
+                                7
                                 <span style="font-size: 1rem;">
                                     &#37;
                                 </span>
@@ -312,66 +334,66 @@
 
                 </div>
 
-            </div>
+                <div class="row">
 
-            <div class="row">
+                    <div class="grid grid--full">
 
-                <div class="grid grid--full">
+                        <div class="grid__item one-half">
 
-                    <div class="grid__item one-half">
-
-                        <div class="styled__group">
-                            <div class="styled__hint">Current Value of Stake Amount</div>
-                            <span style="float: left; padding: 0.5rem 0 0">
+                            <div class="styled__group">
+                                <div class="styled__hint">Current Value of<br>Stake Amount:</div>
+                                <span style="float: left; padding: 0.5rem 0 0">
                                 &euro;&nbsp;
                             </span>
-                            <input class="styled__value text-emphasized"
-                                   type="text"
-                                   id="valueInput"
-                                   value="55200">
+                                <input class="styled__value text-emphasized"
+                                       type="text"
+                                       id="valueInput"
+                                       value="55200">
+                            </div>
+
                         </div>
 
-                    </div>
+                        <div class="grid__item one-half">
 
-                    <div class="grid__item one-half">
-
-                        <div class="styled__group">
-                            <div class="styled__hint">Estimated Annual Reward Value</div>
-                            <span style="float: left; padding: 0.5rem 0 0">
+                            <div class="styled__group">
+                                <div class="styled__hint">Estimated Annual<br>Reward Value:</div>
+                                <span style="float: left; padding: 0.5rem 0 0">
                                 &euro;&nbsp;
                             </span>
-                            <input class="styled__value text-emphasized"
-                                   type="text"
-                                   id="stakedInput"
-                                   value="3760">
+                                <input class="styled__value text-emphasized"
+                                       type="text"
+                                       id="stakedInput"
+                                       value="3760">
+                            </div>
+
                         </div>
 
                     </div>
 
                 </div>
 
-            </div>
+                <div class="row">
 
-            <div class="row">
+                    <div class="grid grid--full">
 
-                <div class="grid grid--full">
+                        <div class="grid__item one-whole">
 
-                    <div class="grid__item one-whole">
+                            <div class="styled__group" style="margin-bottom: 0 !important;">
 
-                        <div class="styled__group" style="margin-bottom: 0 !important;">
+                                <hr>
 
-                            <hr>
-
-                            <span style="float: left; font-size: 1rem; padding: 1.25rem .5rem 0 0;">
+                                <span style="float: left; font-size: 1rem; padding: 1.25rem .5rem 0 0;">
                                 ETH
                             </span>
 
-                            <input class="annual__rewards text-emphasized"
-                                   style="width: auto; display: inline-block;"
-                                   type="text" id="rewardInput" value="2.13">
+                                <input class="annual__rewards text-emphasized"
+                                       style="width: auto; display: inline-block;"
+                                       type="text" id="rewardInput" value="2.13">
 
-                            <div class="styled__hint" style="margin-bottom: 0 !important;">
-                                Estimated Annual Rewards
+                                <div class="styled__hint" style="margin-bottom: 0 !important;">
+                                    Estimated Annual Rewards
+                                </div>
+
                             </div>
 
                         </div>
@@ -384,75 +406,75 @@
 
         </div>
 
-    </div>
+        <div class="grid__item one-whole">
 
-</div>
+            <h2>Responsive Image</h2>
 
-<div class="grid__item one-whole">
+            <div class="one-whole">
 
-    <h2>Responsive Image</h2>
+                <div class="responsive-image__wrapper">
 
-    <div class="one-whole">
+                    <img src="//ethereum.by/static/4c539a6d5efc17c084d7c42f30803612/31987/ethereum-wordmark-black-gray.png"
+                         alt=""
+                         class="responsive-image"
+                    >
 
-        <div class="responsive-image__wrapper">
+                </div>
 
-            <img src="//ethereum.by/static/4c539a6d5efc17c084d7c42f30803612/31987/ethereum-wordmark-black-gray.png"
-                 alt=""
-                 class="responsive-image"
-            >
+            </div>
+
+        </div>
+
+        <div class="grid__item">
+
+            <h2>Responsive Video</h2>
+
+            <video class="one-whole"
+                   src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" controls
+                   playsinline>
+
+            </video>
+
+        </div>
+
+        <div class="grid__item one-whole">
+
+            <h2>Typography</h2>
+
+            <h1>This is a <em>headline</em> of first order</h1>
+            <h2>This is a <em>headline</em> of second order</h2>
+            <h3>This is a <em>headline</em> of third order</h3>
+            <h4>This is a <em>headline</em> of fourth order</h4>
+            <h5>This is a <em>headline</em> of fifth order</h5>
+            <h6>This is a <em>headline</em> of sixth order</h6>
+
+            <p>
+                Default text
+            </p>
+
+            <p>
+                <a href="#">Hyperlink</a>
+            </p>
+
+            <p>
+                <strong>Bold</strong>
+            </p>
+
+            <p>
+                <em>italics</em>
+            </p>
+
+            <p>
+                <del>strikethrough</del>
+            </p>
+
+            <p>
+                <mark>Highlighted text</mark>
+            </p>
 
         </div>
 
     </div>
-
-</div>
-
-<div class="grid__item">
-
-    <h2>Responsive Video</h2>
-
-    <video class="one-whole"
-           src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" controls
-           playsinline>
-
-    </video>
-
-</div>
-
-<div class="grid__item one-whole">
-
-    <h2>Typography</h2>
-
-    <h1>This is a <em>headline</em> of first order</h1>
-    <h2>This is a <em>headline</em> of second order</h2>
-    <h3>This is a <em>headline</em> of third order</h3>
-    <h4>This is a <em>headline</em> of fourth order</h4>
-    <h5>This is a <em>headline</em> of fifth order</h5>
-    <h6>This is a <em>headline</em> of sixth order</h6>
-
-    <p>
-        Default text
-    </p>
-
-    <p>
-        <a href="#">Hyperlink</a>
-    </p>
-
-    <p>
-        <strong>Bold</strong>
-    </p>
-
-    <p>
-        <em>italics</em>
-    </p>
-
-    <p>
-        <del>strikethrough</del>
-    </p>
-
-    <p>
-        <mark>Highlighted text</mark>
-    </p>
 
 </div>
 
@@ -462,7 +484,7 @@
         let minStaking = 32;
         let ethValue = 1725;
         let percentageStaked = 0.05;
-        let percentageReward = 0.0667;
+        let percentageReward = 0.07;
         document.getElementById('amountInput').value = val;
         document.getElementById('validatorsInput').value = val / minStaking;
         document.getElementById('valueInput').value = val * ethValue;

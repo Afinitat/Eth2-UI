@@ -12,3 +12,20 @@ body,
 html {
   height: 100%;
 }
+
+.container {
+  overflow: hidden;
+}
+
+.wrapper {
+  @include clearfix();
+  max-width: $grid-widescreen;
+  margin: 0 auto;
+  padding: 0 ($grid-gutter / 2);
+}
+
+.main-content {
+  display: block;
+  margin-top: $grid-gutter;
+  padding-bottom: $grid-gutter * 2;
+}

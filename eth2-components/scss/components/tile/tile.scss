@@ -13,7 +13,7 @@
 }
 
 .tile {
-  max-width: 480px;
+  max-width: 30rem;
   border: 2px solid;
   padding: 3rem;
 
@@ -50,9 +50,9 @@
   -moz-box-pack: justify;
   justify-content: space-between;
   width: 100%;
-  max-width: 420px;
-  max-height: 192px;
-  border-radius: 4px;
+  max-width: 26.25rem;
+  max-height: 12rem;
+  border-radius: 0.25rem;
   border: $border;
   padding: 1.5rem;
 }
@@ -62,11 +62,11 @@
 }
 
 .price__change-plus {
-  color: green
+  color: $green
 }
 
 .price__change-minus {
-  color: red
+  color: $red
 }
 
 .price__timeframe {
@@ -86,5 +86,5 @@ input[type=text] {
   padding: 0;
 
   float: left;
-  max-width: 10rem;
+  max-width: 10.625rem;
 }
