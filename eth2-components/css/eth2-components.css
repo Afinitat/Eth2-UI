@@ -3191,7 +3191,7 @@ input[type=text] {
   margin: 0;
   padding: 0;
   float: left;
-  max-width: 7rem;
+  max-width: 10rem;
 }
 
 .blockie {
